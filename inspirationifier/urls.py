@@ -12,4 +12,5 @@ router.register('watermark', views.ImageViewSet)
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(router.urls)),
+    path('image/',include("inspirationifierApp.urls"))
 ]
